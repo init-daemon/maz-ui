@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { sleep } from 'maz-ui'
+  import { sleep } from 'maz-ui/dist'
 
   const toast = useToast()
   const wait = useWait()

@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url'
 
 const _dirname = fileURLToPath(new URL('.', import.meta.url))
 
-const AOS_SCSS_ENTRY = resolve(_dirname, './../modules/plugins/aos/scss/index.scss')
+const AOS_SCSS_ENTRY = resolve(_dirname, './../src/plugins/aos/scss/index.scss')
 const AOS_SCSS_OUTPUT_DIR = resolve(_dirname, './../dist/css')
 const AOS_SCSS_OUTPUT = resolve(_dirname, './../dist/css/aos.css')
 

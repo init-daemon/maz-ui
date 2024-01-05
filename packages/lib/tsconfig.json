@@ -3,19 +3,21 @@
   "compilerOptions": {
     "module": "ESNext",
     "target": "ESNext",
-    "lib": ["esnext", "DOM", "DOM.iterable", "scripthost"],
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM", "DOM.iterable", "scripthost"],
     "strictPropertyInitialization": false,
     "noImplicitAny": false,
+    "declaration": true,
+    "declarationDir": "dist/types",
     "noImplicitThis": false,
-    "ignoreDeprecations": "5.0",
-    "verbatimModuleSyntax": false,
+    // "verbatimModuleSyntax": false,
     "types": ["@types/node", "vite-svg-loader"],
-    "baseUrl": "."
   },
-  "include": ["modules", "components", "tailwindcss/**/*", "icons", "utils", "resolvers"],
-  "exclude": ["node_modules", "components_tmp/**/*"],
+  "include": ["src/*.ts", "src/**/*.ts", "src/**/*.vue", "types/*.d.ts"],
+  "exclude": ["node_modules", "src/components_tmp/**/*"],
   "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
     "esm": true,
-    "experimentalSpecifierResolution": "node"
   }
 }

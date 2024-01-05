@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import MazDropdown from '@components/MazDropdown.vue'
 import MazBtn from '@components/MazBtn.vue'
-import { sleep } from '@modules/helpers'
+import { sleep } from '@utils'
 
 describe('MazDropdown', () => {
   test('renders a dropdown button with the provided label', async () => {

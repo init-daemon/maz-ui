@@ -5,7 +5,7 @@ import {
   type UserVisibilyOptions,
   UserVisibility,
   sleep,
-} from '@modules/helpers'
+} from '@utils'
 
 import { documentEmitVisibilityState } from '@tests/helpers/document-event'
 
@@ -29,7 +29,7 @@ afterAll(() => {
   instance = undefined
 })
 
-describe('@modules/helpers/user-visibility.ts', () => {
+describe('@utils/user-visibility.ts', () => {
   describe('Given app want trigger user idle', () => {
     describe('When instance is launch', () => {
       it('Then instance is IdleTimeout', async () => {

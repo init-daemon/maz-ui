@@ -1,6 +1,6 @@
-import { debounceCallback } from '@modules/helpers/debounce-callback'
+import { debounceCallback } from '@utils/debounce-callback'
 
-describe('@modules/helpers/debounce-callback', () => {
+describe('@utils/debounce-callback', () => {
   test('Delaying Callback Execution', () => {
     vi.useFakeTimers()
 

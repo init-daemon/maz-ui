@@ -45,7 +45,7 @@ export async function buildEntry({
       )
     }
 
-    includeComponentTemplate.push(`export * from './types'`)
+    // includeComponentTemplate.push(`export * from './types'`)
 
     const file = getEntryComponentTemplate({
       include: includeComponentTemplate.join(EOL),

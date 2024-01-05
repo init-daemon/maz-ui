@@ -5,7 +5,7 @@ import {
   sleep,
   type IdleTimeoutOptions,
   type IdleTimeoutCallback,
-} from '@modules/helpers'
+} from '@utils'
 
 const DEFAULT_TIMEOUT = 300
 
@@ -27,7 +27,7 @@ afterAll(() => {
   instance = undefined
 })
 
-describe('@modules/helpers/idle-timeout', () => {
+describe('@utils/idle-timeout', () => {
   describe('Given app want trigger user idle', () => {
     describe('When instance is launch', () => {
       it('Then instance is IdleTimeout', () => {

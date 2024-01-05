@@ -1,4 +1,4 @@
-import { countryCodeToUnicodeFlag } from '@modules/helpers/country-code-to-unicode-flag'
+import { countryCodeToUnicodeFlag } from '@utils/country-code-to-unicode-flag'
 
 describe('countryCodeToUnicodeFlag', () => {
   test('devrait retourner un drapeau Unicode pour la locale "fr"', () => {
