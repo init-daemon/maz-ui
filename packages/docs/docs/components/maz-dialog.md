@@ -60,9 +60,9 @@ For long content, you can enable scrolling in content part (Header and footer sl
 With this option, an overflow is applied: So, some problems with absolute content may appear - such as `<MazSelect />` opened list can not be visible outside the dialog content part, you should scroll again to show the full content - **Check example below**
 :::
 
-<MazBtn @click="scollableOpened = true">Open Scrollable Dialog</MazBtn>
+<MazBtn @click="scrollableOpened = true">Open Scrollable Dialog</MazBtn>
 
-<MazDialog v-model="scollableOpened" title="Dialog Title" max-height="400px" scrollable>
+<MazDialog v-model="scrollableOpened" title="Dialog Title" max-height="400px" scrollable>
   <template #title>
     Scrollable Dialog Title
   </template>
@@ -102,14 +102,14 @@ With this option, an overflow is applied: So, some problems with absolute conten
     />
   </template>
   <template #footer>
-    <MazBtn @click="scollableOpened = false">
+    <MazBtn @click="scrollableOpened = false">
       Confirm
     </MazBtn>
   </template>
 </MazDialog>
 
 ```html
-<MazDialog v-model="scollableOpened" title="Dialog Title" max-height="400px" scrollable>
+<MazDialog v-model="scrollableOpened" title="Dialog Title" max-height="400px" scrollable>
   <template #title>
     Scrollable Dialog Title
   </template>
@@ -149,7 +149,7 @@ With this option, an overflow is applied: So, some problems with absolute conten
     />
   </template>
   <template #footer>
-    <MazBtn @click="scollableOpened = false">
+    <MazBtn @click="scrollableOpened = false">
       Confirm
     </MazBtn>
   </template>
@@ -161,5 +161,5 @@ With this option, an overflow is applied: So, some problems with absolute conten
 <script setup>
   import { ref } from 'vue'
   const isOpen = ref(false)
-  const scollableOpened = ref(false)
+  const scrollableOpened = ref(false)
 </script>
